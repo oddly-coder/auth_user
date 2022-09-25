@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <div class="container">
+        {% if user.is_authenticated %}
+            <h1>User is authenticated </h1>
+        {% else %}
+            <h1>User is not authenticated</h1>
+        {% endif %}
+    </div>
+{% endblock content %}
+
